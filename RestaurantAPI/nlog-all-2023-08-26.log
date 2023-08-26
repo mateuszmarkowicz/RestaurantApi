@@ -1,0 +1,657 @@
+2023-08-26 20:10:09.1992||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-08-26 20:10:09.2596||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-08-26 20:10:09.2779||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\spector\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-26 20:10:09.2779||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\spector\AppData\Local\ASP.NET\DataProtection-Keys\key-e61fdd24-40f2-47a6-9746-dd0da115667d.xml'. 
+2023-08-26 20:10:09.2962||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {e61fdd24-40f2-47a6-9746-dd0da115667d}. 
+2023-08-26 20:10:09.2962||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {e61fdd24-40f2-47a6-9746-dd0da115667d} with expiration date 2023-11-22 18:34:15Z as default key. 
+2023-08-26 20:10:09.2962||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-08-26 20:10:09.3096||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-08-26 20:10:09.3096||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-08-26 20:10:09.3096||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-08-26 20:10:09.3096||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-08-26 20:10:09.3096||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {e61fdd24-40f2-47a6-9746-dd0da115667d} as the default key. 
+2023-08-26 20:10:09.3096||DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {e61fdd24-40f2-47a6-9746-dd0da115667d} was loaded during application startup. 
+2023-08-26 20:10:09.4190||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: E2D69AD7BB9B78AAD0CDFD92806FB653B622B7DD) 
+2023-08-26 20:10:09.4450||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7004 
+2023-08-26 20:10:09.4450||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5185 
+2023-08-26 20:10:09.4450||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly RestaurantAPI 
+2023-08-26 20:10:09.4450||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-08-26 20:10:09.4450||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-08-26 20:10:09.4450||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-26 20:10:09.4450||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-26 20:10:09.4450||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Programowanie\C#\RestaurantAPI\RestaurantAPI\ 
+2023-08-26 20:10:09.4450||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-08-26 20:10:09.8427||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQ8" accepted. 
+2023-08-26 20:10:09.8427||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQ8" started. 
+2023-08-26 20:10:09.9092||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQ9" accepted. 
+2023-08-26 20:10:09.9092||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQ9" started. 
+2023-08-26 20:10:10.1073||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQA" accepted. 
+2023-08-26 20:10:10.1073||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQA" started. 
+2023-08-26 20:10:10.1464||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQB" accepted. 
+2023-08-26 20:10:10.1464||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQB" started. 
+2023-08-26 20:10:10.1705||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6BUNMSBQB" received FIN. 
+2023-08-26 20:10:10.1705||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMT6BUNMSBQA established using the following protocol: Tls12 
+2023-08-26 20:10:10.1705||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMT6BUNMSBQB established using the following protocol: Tls12 
+2023-08-26 20:10:10.1912||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQB" is closed. The last processed stream ID was 0. 
+2023-08-26 20:10:10.1912||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6BUNMSBQB" sending FIN because: "The client closed the connection." 
+2023-08-26 20:10:10.1912||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-08-26 20:10:10.1912||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-08-26 20:10:10.1912||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-08-26 20:10:10.1912||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-08-26 20:10:10.1912||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-08-26 20:10:10.1912||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" received HEADERS frame for stream ID 1 with length 464 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-08-26 20:10:10.1912||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQB" stopped. 
+2023-08-26 20:10:10.2134||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-08-26 20:10:10.2228||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/weatherforecast - - 
+2023-08-26 20:10:10.2466||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-08-26 20:10:10.2466||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:10:10.2466||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /weatherforecast does not match a supported file type 
+2023-08-26 20:10:10.6998||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-08-26 20:10:10.7184||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 20:10:10.7375||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/weatherforecast' 
+2023-08-26 20:10:10.7375||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-08-26 20:10:10.7375||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6BUNMSBQA" sending HEADERS frame for stream ID 1 with length 45 and flags END_STREAM, END_HEADERS. 
+2023-08-26 20:10:10.7481||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/weatherforecast - - - 404 0 - 527.6711ms 
+2023-08-26 20:10:19.8570||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2023-08-26 20:10:19.8570||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQ8" stopped. 
+2023-08-26 20:10:19.8570||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6BUNMSBQ8" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-08-26 20:10:19.9295||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2023-08-26 20:10:19.9295||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQ9" stopped. 
+2023-08-26 20:10:19.9295||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6BUNMSBQ9" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-08-26 20:12:02.8780||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQC" accepted. 
+2023-08-26 20:12:02.8780||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQC" started. 
+2023-08-26 20:12:02.8780||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" accepted. 
+2023-08-26 20:12:02.8780||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" started. 
+2023-08-26 20:12:02.8780||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6BUNMSBQC" received FIN. 
+2023-08-26 20:12:02.9085||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMT6BUNMSBQD established using the following protocol: Tls12 
+2023-08-26 20:12:02.9085||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-26 20:12:02.9173||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7004/file multipart/form-data;+boundary=--------------------------208199234024708159149848 68584 
+2023-08-26 20:12:02.9353||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQC" stopped. 
+2023-08-26 20:12:02.9353||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6BUNMSBQC" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-08-26 20:12:02.9353||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:12:02.9353||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|2 candidate(s) found for the request path '/file' 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI)' with route pattern 'file' is valid for the request path '/file' 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' with route pattern 'file' is valid for the request path '/file' 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI)' 
+2023-08-26 20:12:03.1844||DEBUG|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful. 
+2023-08-26 20:12:03.1989||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI)' 
+2023-08-26 20:12:03.2162||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Upload", controller = "File"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Upload(Microsoft.AspNetCore.Http.IFormFile) on controller RestaurantAPI.Controllers.FileController (RestaurantAPI). 
+2023-08-26 20:12:03.2162||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:12:03.2162||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:12:03.2162||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-08-26 20:12:03.2162||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:12:03.2162||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-08-26 20:12:03.2162||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:12:03.2162||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:12:03.2326||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000002": started reading request body. 
+2023-08-26 20:12:03.2326||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000002": done reading request body. 
+2023-08-26 20:12:03.2512||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ... 
+2023-08-26 20:12:03.2512||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinder|Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name '' in request data ... 
+2023-08-26 20:12:03.2512||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinder|Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'. 
+2023-08-26 20:12:03.2512||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'. 
+2023-08-26 20:12:03.2512||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ... 
+2023-08-26 20:12:03.2742||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'. 
+2023-08-26 20:12:03.2742||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:03.2742||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:03.2799||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:12:03.2799||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI) with arguments (Microsoft.AspNetCore.Http.FormFile) 
+2023-08-26 20:12:03.2799||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.OkResult in 1.4504ms. 
+2023-08-26 20:12:03.2799||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:03.2799||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:03.2799||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkResult. 
+2023-08-26 20:12:03.2799||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200 
+2023-08-26 20:12:03.2799||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkResult. 
+2023-08-26 20:12:03.2799||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI) in 73.0645ms 
+2023-08-26 20:12:03.2933||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.FileController.Upload (RestaurantAPI)' 
+2023-08-26 20:12:03.2933||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:12:03.2933||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7004/file multipart/form-data;+boundary=--------------------------208199234024708159149848 68584 - 200 0 - 384.4973ms 
+2023-08-26 20:12:29.8900||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - 
+2023-08-26 20:12:29.8900||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /file does not match a supported file type 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/file' 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' with route pattern 'file' is valid for the request path '/file' 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful. 
+2023-08-26 20:12:29.8900||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:12:29.8900||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetFile", controller = "File"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetFile(System.String) on controller RestaurantAPI.Controllers.FileController (RestaurantAPI). 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'fileName' of type 'System.String' using the name 'fileName' in request data ... 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:12:29.8900||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:12:29.9021||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:12:29.9021||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:29.9021||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:29.9021||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:12:29.9021||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) with arguments (Stare_relacje.png) 
+2023-08-26 20:12:29.9021||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.FileContentResult in 0.5944ms. 
+2023-08-26 20:12:29.9021||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:29.9021||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:12:29.9021||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:12:29.9021||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|Executing FileContentResult, sending file with download name 'Stare_relacje.png' ... 
+2023-08-26 20:12:29.9021||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'. 
+2023-08-26 20:12:29.9021||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:12:29.9021||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) in 21.6767ms 
+2023-08-26 20:12:29.9021||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:12:29.9021||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:12:29.9021||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - - 200 68370 image/png 26.6480ms 
+2023-08-26 20:13:04.4231||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7004/api/account/login application/json 65 
+2023-08-26 20:13:04.4231||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/account/login' 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' with route pattern 'api/account/login' is valid for the request path '/api/account/login' 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:04.4231||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:04.4231||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(RestaurantAPI.Models.LoginDto) on controller RestaurantAPI.Controllers.AccountController (RestaurantAPI). 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-08-26 20:13:04.4231||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.AccountController (RestaurantAPI) 
+2023-08-26 20:13:04.5253||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.AccountController (RestaurantAPI) 
+2023-08-26 20:13:04.5253||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' ... 
+2023-08-26 20:13:04.5253||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' using the name '' in request data ... 
+2023-08-26 20:13:04.5253||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-08-26 20:13:04.5346||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000004": started reading request body. 
+2023-08-26 20:13:04.5346||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000004": done reading request body. 
+2023-08-26 20:13:04.5346||DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'RestaurantAPI.Models.LoginDto' 
+2023-08-26 20:13:04.5346||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:04.5346||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:04.5346||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' ... 
+2023-08-26 20:13:04.5346||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:04.5346||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:04.5346||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:04.5346||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:04.5346||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:04.5346||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:13:04.5346||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) with arguments (RestaurantAPI.Models.LoginDto) 
+2023-08-26 20:13:04.8750||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 337.7926ms. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 20:13:04.8750||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-08-26 20:13:04.8750||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-08-26 20:13:04.8750||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-08-26 20:13:04.8750||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-08-26 20:13:04.8750||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2023-08-26 20:13:04.8750||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:04.8750||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:04.8750||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) in 448.1415ms 
+2023-08-26 20:13:04.8750||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:04.8750||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:13:04.8904||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7004/api/account/login application/json 65 - 200 - text/plain;+charset=utf-8 467.2594ms 
+2023-08-26 20:13:10.3572||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7004/api/account/login application/json 65 
+2023-08-26 20:13:10.3572||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/account/login' 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' with route pattern 'api/account/login' is valid for the request path '/api/account/login' 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:10.3572||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:10.3572||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(RestaurantAPI.Models.LoginDto) on controller RestaurantAPI.Controllers.AccountController (RestaurantAPI). 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.AccountController (RestaurantAPI) 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.AccountController (RestaurantAPI) 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' ... 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' using the name '' in request data ... 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000005": started reading request body. 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000005": done reading request body. 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'RestaurantAPI.Models.LoginDto' 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' ... 
+2023-08-26 20:13:10.3572||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:10.3572||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:10.3572||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:10.3572||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:10.3572||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:10.3572||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:13:10.3572||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) with arguments (RestaurantAPI.Models.LoginDto) 
+2023-08-26 20:13:10.3982||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.1895ms. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 20:13:10.3982||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-08-26 20:13:10.3982||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-08-26 20:13:10.3982||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-08-26 20:13:10.3982||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-08-26 20:13:10.3982||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2023-08-26 20:13:10.3982||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:10.3982||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:10.3982||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) in 39.9876ms 
+2023-08-26 20:13:10.3982||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:10.3982||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:13:10.3982||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7004/api/account/login application/json 65 - 200 - text/plain;+charset=utf-8 41.3131ms 
+2023-08-26 20:13:17.8344||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - 
+2023-08-26 20:13:17.8344||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:13:17.8344||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /file does not match a supported file type 
+2023-08-26 20:13:17.8344||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Failed to validate the token. Microsoft.IdentityModel.Tokens.SecurityTokenException: IDX10612: Decryption failed. Header.Enc is null or empty, it must be specified.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DecryptToken(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-26 20:13:17.8344||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Bearer was not authenticated. Failure message: IDX10612: Decryption failed. Header.Enc is null or empty, it must be specified. 
+2023-08-26 20:13:17.8344||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 20:13:17.8344||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/file' 
+2023-08-26 20:13:17.8344||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' with route pattern 'file' is valid for the request path '/file' 
+2023-08-26 20:13:17.8344||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:13:17.8413||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-26 20:13:17.8413||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-26 20:13:17.8413||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:13:17.8413||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - - 401 0 - 13.6353ms 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /file does not match a supported file type 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/file' 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' with route pattern 'file' is valid for the request path '/file' 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful. 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetFile", controller = "File"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetFile(System.String) on controller RestaurantAPI.Controllers.FileController (RestaurantAPI). 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'fileName' of type 'System.String' using the name 'fileName' in request data ... 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) with arguments (Stare_relacje.png) 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.FileContentResult in 0.1233ms. 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|Executing FileContentResult, sending file with download name 'Stare_relacje.png' ... 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'. 
+2023-08-26 20:13:24.7931||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) in 10.2732ms 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:13:24.7931||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:13:24.7931||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - - 200 68370 image/png 10.8094ms 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7004/api/account/login application/json 65 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/account/login' 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' with route pattern 'api/account/login' is valid for the request path '/api/account/login' 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(RestaurantAPI.Models.LoginDto) on controller RestaurantAPI.Controllers.AccountController (RestaurantAPI). 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.AccountController (RestaurantAPI) 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.AccountController (RestaurantAPI) 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' ... 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' using the name '' in request data ... 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000008": started reading request body. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6BUNMSBQD", Request id "0HMT6BUNMSBQD:00000008": done reading request body. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'RestaurantAPI.Models.LoginDto' 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'dto' of type 'RestaurantAPI.Models.LoginDto' ... 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'dto' of type 'RestaurantAPI.Models.LoginDto'. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) with arguments (RestaurantAPI.Models.LoginDto) 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.0782ms. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:49.5942||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI) in 3.3686ms 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.AccountController.Login (RestaurantAPI)' 
+2023-08-26 20:13:49.5942||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:13:49.5942||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7004/api/account/login application/json 65 - 200 - text/plain;+charset=utf-8 3.7238ms 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /file does not match a supported file type 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/file' 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' with route pattern 'file' is valid for the request path '/file' 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful. 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetFile", controller = "File"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetFile(System.String) on controller RestaurantAPI.Controllers.FileController (RestaurantAPI). 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'fileName' of type 'System.String' using the name 'fileName' in request data ... 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) with arguments (Stare_relacje.png) 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.FileContentResult in 0.1289ms. 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|Executing FileContentResult, sending file with download name 'Stare_relacje.png' ... 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'. 
+2023-08-26 20:14:00.6138||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) in 1.2257ms 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:14:00.6138||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6BUNMSBQD" completed keep alive response. 
+2023-08-26 20:14:00.6138||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7004/file?fileName=Stare_relacje.png - - - 200 68370 image/png 4.7558ms 
+2023-08-26 20:30:45.1525||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-08-26 20:30:45.2096||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-08-26 20:30:45.2246||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\spector\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-26 20:30:45.2246||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\spector\AppData\Local\ASP.NET\DataProtection-Keys\key-e61fdd24-40f2-47a6-9746-dd0da115667d.xml'. 
+2023-08-26 20:30:45.2318||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {e61fdd24-40f2-47a6-9746-dd0da115667d}. 
+2023-08-26 20:30:45.2318||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {e61fdd24-40f2-47a6-9746-dd0da115667d} with expiration date 2023-11-22 18:34:15Z as default key. 
+2023-08-26 20:30:45.2318||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-08-26 20:30:45.2318||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-08-26 20:30:45.2318||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-08-26 20:30:45.2467||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-08-26 20:30:45.2467||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-08-26 20:30:45.2467||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {e61fdd24-40f2-47a6-9746-dd0da115667d} as the default key. 
+2023-08-26 20:30:45.2467||DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {e61fdd24-40f2-47a6-9746-dd0da115667d} was loaded during application startup. 
+2023-08-26 20:30:45.3275||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: E2D69AD7BB9B78AAD0CDFD92806FB653B622B7DD) 
+2023-08-26 20:30:45.3489||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7004 
+2023-08-26 20:30:45.3489||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5185 
+2023-08-26 20:30:45.3489||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly RestaurantAPI 
+2023-08-26 20:30:45.3489||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-08-26 20:30:45.3489||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-08-26 20:30:45.3489||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-26 20:30:45.3489||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-26 20:30:45.3489||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Programowanie\C#\RestaurantAPI\RestaurantAPI\ 
+2023-08-26 20:30:45.3489||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-08-26 20:30:45.4627||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6CA7UMJMD" received FIN. 
+2023-08-26 20:30:45.4702||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6CA7UMJMD" accepted. 
+2023-08-26 20:30:45.4702||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6CA7UMJMD" started. 
+2023-08-26 20:30:45.4836||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-26 20:30:45.5007||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6CA7UMJMD" stopped. 
+2023-08-26 20:30:45.5007||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6CA7UMJMD" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-08-26 20:30:45.6212||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6CA7UMJME" accepted. 
+2023-08-26 20:30:45.6212||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6CA7UMJME" started. 
+2023-08-26 20:30:45.6520||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMT6CA7UMJME established using the following protocol: Tls12 
+2023-08-26 20:30:45.6671||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-08-26 20:30:45.6689||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-08-26 20:30:45.6689||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-08-26 20:30:45.6689||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-08-26 20:30:45.6689||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-08-26 20:30:45.6689||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" received HEADERS frame for stream ID 1 with length 464 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-08-26 20:30:45.6855||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-08-26 20:30:45.6855||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/weatherforecast - - 
+2023-08-26 20:30:45.7204||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-08-26 20:30:45.7204||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:30:45.7204||INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request. 
+2023-08-26 20:30:45.7397||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /weatherforecast does not match a supported file type 
+2023-08-26 20:30:45.7897||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-08-26 20:30:45.8084||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 20:30:45.8280||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/weatherforecast' 
+2023-08-26 20:30:45.8280||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-08-26 20:30:45.8280||DEBUG|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Response is not cacheable because it does not contain the 'public' cache directive. 
+2023-08-26 20:30:45.8280||INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request. 
+2023-08-26 20:30:45.8280||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending HEADERS frame for stream ID 1 with length 45 and flags END_STREAM, END_HEADERS. 
+2023-08-26 20:30:45.8280||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/weatherforecast - - - 404 0 - 146.2337ms 
+2023-08-26 20:30:53.0098||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" received HEADERS frame for stream ID 3 with length 46 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-08-26 20:30:53.0098||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/file?fileName=Stare_relacje.png - - 
+2023-08-26 20:30:53.0098||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 20:30:53.0098||INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request. 
+2023-08-26 20:30:53.0098||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /file does not match a supported file type 
+2023-08-26 20:30:53.0117||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-08-26 20:30:53.0117||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 20:30:53.0117||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/file' 
+2023-08-26 20:30:53.0117||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' with route pattern 'file' is valid for the request path '/file' 
+2023-08-26 20:30:53.0117||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:30:53.0117||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:30:53.0387||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetFile", controller = "File"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetFile(System.String) on controller RestaurantAPI.Controllers.FileController (RestaurantAPI). 
+2023-08-26 20:30:53.0387||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 20:30:53.0387||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 20:30:53.0387||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter 
+2023-08-26 20:30:53.0387||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 20:30:53.0387||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-08-26 20:30:53.0387||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:30:53.0387||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.FileController (RestaurantAPI) 
+2023-08-26 20:30:53.0516||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:30:53.0516||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'fileName' of type 'System.String' using the name 'fileName' in request data ... 
+2023-08-26 20:30:53.0516||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:30:53.0516||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:30:53.0516||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'fileName' of type 'System.String' ... 
+2023-08-26 20:30:53.0698||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'fileName' of type 'System.String'. 
+2023-08-26 20:30:53.0698||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:30:53.0698||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:30:53.0698||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter. 
+2023-08-26 20:30:53.0698||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter. 
+2023-08-26 20:30:53.0756||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) - Validation state: Valid 
+2023-08-26 20:30:53.0756||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) with arguments (Stare_relacje.png) 
+2023-08-26 20:30:57.1932||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.FileContentResult in 4114.2928ms. 
+2023-08-26 20:30:57.1932||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter. 
+2023-08-26 20:30:57.1932||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter. 
+2023-08-26 20:30:57.1932||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:30:57.1932||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 20:30:57.1932||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:30:57.1932||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|Executing FileContentResult, sending file with download name 'Stare_relacje.png' ... 
+2023-08-26 20:30:57.1932||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor|The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'. 
+2023-08-26 20:30:57.1999||DEBUG|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Vary by rules were updated. Headers: (null), Query keys: FILENAME 
+2023-08-26 20:30:57.1999||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending HEADERS frame for stream ID 3 with length 169 and flags END_HEADERS. 
+2023-08-26 20:30:57.1999||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending DATA frame for stream ID 3 with length 16384 and flags NONE. 
+2023-08-26 20:30:57.1999||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending DATA frame for stream ID 3 with length 16384 and flags NONE. 
+2023-08-26 20:30:57.1999||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending DATA frame for stream ID 3 with length 16384 and flags NONE. 
+2023-08-26 20:30:57.1999||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending DATA frame for stream ID 3 with length 16384 and flags NONE. 
+2023-08-26 20:30:57.1999||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-08-26 20:30:57.2152||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending DATA frame for stream ID 3 with length 2834 and flags NONE. 
+2023-08-26 20:30:57.2152||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.FileContentResult. 
+2023-08-26 20:30:57.2152||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI) in 4175.6071ms 
+2023-08-26 20:30:57.2152||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.FileController.GetFile (RestaurantAPI)' 
+2023-08-26 20:30:57.2152||INFO|RestaurantAPI.Middleware.RequestTimeMiddleware|GET | /file | Request duration longer than 4s  
+2023-08-26 20:30:57.2152||INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached. 
+2023-08-26 20:30:57.2152||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6CA7UMJME" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2023-08-26 20:30:57.2152||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/file?fileName=Stare_relacje.png - - - 200 68370 image/png 4209.2555ms 
+2023-08-26 21:21:05.4165||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-08-26 21:21:05.4751||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-08-26 21:21:05.4915||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\spector\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-26 21:21:05.4915||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\spector\AppData\Local\ASP.NET\DataProtection-Keys\key-e61fdd24-40f2-47a6-9746-dd0da115667d.xml'. 
+2023-08-26 21:21:05.4988||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {e61fdd24-40f2-47a6-9746-dd0da115667d}. 
+2023-08-26 21:21:05.4988||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {e61fdd24-40f2-47a6-9746-dd0da115667d} with expiration date 2023-11-22 18:34:15Z as default key. 
+2023-08-26 21:21:05.4988||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-08-26 21:21:05.4988||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-08-26 21:21:05.5112||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-08-26 21:21:05.5112||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-08-26 21:21:05.5112||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-08-26 21:21:05.5112||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {e61fdd24-40f2-47a6-9746-dd0da115667d} as the default key. 
+2023-08-26 21:21:05.5112||DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {e61fdd24-40f2-47a6-9746-dd0da115667d} was loaded during application startup. 
+2023-08-26 21:21:05.5983||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: E2D69AD7BB9B78AAD0CDFD92806FB653B622B7DD) 
+2023-08-26 21:21:05.6198||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7004 
+2023-08-26 21:21:05.6198||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5185 
+2023-08-26 21:21:05.6198||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly RestaurantAPI 
+2023-08-26 21:21:05.6198||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-08-26 21:21:05.6198||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-08-26 21:21:05.6198||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-26 21:21:05.6198||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-26 21:21:05.6198||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Programowanie\C#\RestaurantAPI\RestaurantAPI\ 
+2023-08-26 21:21:05.6198||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-08-26 21:21:05.7771||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6D6C2L8CU" received FIN. 
+2023-08-26 21:21:05.7771||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8CU" accepted. 
+2023-08-26 21:21:05.7771||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8CU" started. 
+2023-08-26 21:21:05.7771||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-26 21:21:05.8096||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8CU" stopped. 
+2023-08-26 21:21:05.8096||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6D6C2L8CU" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-08-26 21:21:05.9090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8CV" accepted. 
+2023-08-26 21:21:05.9090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8CV" started. 
+2023-08-26 21:21:05.9429||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMT6D6C2L8CV established using the following protocol: Tls12 
+2023-08-26 21:21:05.9575||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-08-26 21:21:05.9575||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-08-26 21:21:05.9575||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-08-26 21:21:05.9575||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-08-26 21:21:05.9575||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-08-26 21:21:05.9575||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" received HEADERS frame for stream ID 1 with length 464 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-08-26 21:21:05.9743||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-08-26 21:21:05.9835||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/weatherforecast - - 
+2023-08-26 21:21:06.0092||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-08-26 21:21:06.0092||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 21:21:06.0127||INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request. 
+2023-08-26 21:21:06.0127||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /weatherforecast does not match a supported file type 
+2023-08-26 21:21:06.0683||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-08-26 21:21:06.0867||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 21:21:06.1051||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/weatherforecast' 
+2023-08-26 21:21:06.1051||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-08-26 21:21:06.1066||DEBUG|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Response is not cacheable because it does not contain the 'public' cache directive. 
+2023-08-26 21:21:06.1066||INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request. 
+2023-08-26 21:21:06.1066||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMT6D6C2L8CV" sending HEADERS frame for stream ID 1 with length 45 and flags END_STREAM, END_HEADERS. 
+2023-08-26 21:21:06.1066||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/weatherforecast - - - 404 0 - 135.8735ms 
+2023-08-26 21:21:07.0224||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8D0" accepted. 
+2023-08-26 21:21:07.0224||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8D0" started. 
+2023-08-26 21:21:07.0224||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8D1" accepted. 
+2023-08-26 21:21:07.0224||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8D1" started. 
+2023-08-26 21:21:07.0224||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6D6C2L8D0" received FIN. 
+2023-08-26 21:21:07.0291||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMT6D6C2L8D1 established using the following protocol: Tls12 
+2023-08-26 21:21:07.0291||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-26 21:21:07.0291||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8D0" stopped. 
+2023-08-26 21:21:07.0291||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMT6D6C2L8D0" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-08-26 21:21:07.0291||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7004/api/restaurant?searchPhrase=&pageSize=15&pageNumber=1 application/json 44 
+2023-08-26 21:21:07.0291||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-08-26 21:21:07.0291||DEBUG|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The request cannot be served from cache because it contains an 'Authorization' header. 
+2023-08-26 21:21:07.0291||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/restaurant does not match a supported file type 
+2023-08-26 21:21:07.1835||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-08-26 21:21:07.1835||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-08-26 21:21:07.1835||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-08-26 21:21:07.1835||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/restaurant' 
+2023-08-26 21:21:07.1835||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' with route pattern 'api/restaurant' is valid for the request path '/api/restaurant' 
+2023-08-26 21:21:07.1835||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-08-26 21:21:07.1835||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-08-26 21:21:07.2193||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Restaurant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestaurantAPI.Model.RestaurantDto]] GetAll(RestaurantAPI.Models.RestaurantQuery) on controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI). 
+2023-08-26 21:21:07.2193||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-08-26 21:21:07.2193||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-08-26 21:21:07.2193||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-08-26 21:21:07.2193||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-08-26 21:21:07.2193||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-08-26 21:21:07.2193||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-08-26 21:21:07.3106||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-08-26 21:21:07.3106||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'query' of type 'RestaurantAPI.Models.RestaurantQuery' ... 
+2023-08-26 21:21:07.3106||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'query' of type 'RestaurantAPI.Models.RestaurantQuery' using the name '' in request data ... 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.SearchPhrase' of type 'System.String' using the name 'SearchPhrase' in request data ... 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.SearchPhrase' of type 'System.String'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.PageNumber' of type 'System.Int32' using the name 'PageNumber' in request data ... 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.PageNumber' of type 'System.Int32'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.PageSize' of type 'System.Int32'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.SortBy' of type 'System.String' using the name 'SortBy' in request data ... 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'SortBy' for binding property 'RestaurantAPI.Models.RestaurantQuery.SortBy' of type 'System.String'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.SortBy' of type 'System.String'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.SortDirection' of type 'RestaurantAPI.Models.SortDirection' using the name 'SortDirection' in request data ... 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'SortDirection' for binding property 'RestaurantAPI.Models.RestaurantQuery.SortDirection' of type 'RestaurantAPI.Models.SortDirection'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'RestaurantAPI.Models.RestaurantQuery.SortDirection' of type 'RestaurantAPI.Models.SortDirection'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'query' of type 'RestaurantAPI.Models.RestaurantQuery'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'query' of type 'RestaurantAPI.Models.RestaurantQuery'. 
+2023-08-26 21:21:07.3264||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'query' of type 'RestaurantAPI.Models.RestaurantQuery' ... 
+2023-08-26 21:21:07.3860||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'query' of type 'RestaurantAPI.Models.RestaurantQuery'. 
+2023-08-26 21:21:07.3860||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 21:21:07.3860||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 21:21:07.3860||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 21:21:07.3860||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 21:21:07.3900||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI) - Validation state: Valid 
+2023-08-26 21:21:07.3900||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI) with arguments (RestaurantAPI.Models.RestaurantQuery) 
+2023-08-26 21:21:07.7573||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 364.3587ms. 
+2023-08-26 21:21:07.7573||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 21:21:07.7573||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-08-26 21:21:07.7573||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 21:21:07.7573||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-08-26 21:21:07.7573||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 21:21:07.7573||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 21:21:07.7573||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 21:21:07.7573||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-08-26 21:21:07.7573||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-08-26 21:21:07.7573||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-08-26 21:21:07.7573||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-08-26 21:21:07.7613||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2023-08-26 21:21:07.7613||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'RestaurantAPI.Models.PagedResult`1[[RestaurantAPI.Model.RestaurantDto, RestaurantAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-08-26 21:21:07.8095||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-08-26 21:21:07.8095||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 21:21:07.8095||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-08-26 21:21:07.8095||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI) in 589.6137ms 
+2023-08-26 21:21:07.8095||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-08-26 21:21:07.8095||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMT6D6C2L8D1" completed keep alive response. 
+2023-08-26 21:21:07.8261||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7004/api/restaurant?searchPhrase=&pageSize=15&pageNumber=1 application/json 44 - 200 - application/json;+charset=utf-8 788.5193ms 
+2023-08-26 21:21:07.8261||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6D6C2L8D1", Request id "0HMT6D6C2L8D1:00000002": started reading request body. 
+2023-08-26 21:21:07.8261||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMT6D6C2L8D1", Request id "0HMT6D6C2L8D1:00000002": done reading request body. 
