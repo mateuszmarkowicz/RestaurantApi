@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.csproj": {}
+    "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI.csproj": {}
   },
   "projects": {
-    "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.csproj": {
+    "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.csproj",
+        "projectUniqueName": "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI.csproj",
         "projectName": "RestaurantAPI",
-        "projectPath": "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.csproj",
+        "projectPath": "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI.csproj",
         "packagesPath": "C:\\Users\\spector\\.nuget\\packages\\",
-        "outputPath": "D:\\Programowanie\\C#\\RestaurantAPI\\RestaurantAPI\\obj\\",
+        "outputPath": "D:\\Programowanie\\C#\\RestaurantAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
